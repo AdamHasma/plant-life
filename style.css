@@ -1,0 +1,70 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Woodland';
+  src: url('assets/PPWoodland-Heavy.woff2') format('woff2'), url('PPWoodland-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/ibm-plex-mono.woff2') format('woff2'), url('ibm-plex-mono.woff') format('woff');
+}
+
+body {
+  font-family: Woodland;
+  font size: 16px;
+  line-height: 1.6;
+  Text color: #2a2a2a;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #00b98d;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+}
+
+nav a {
+  letter-spacing: 1px;
+  opacity: .8;
+  color: white;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.nav-links+.nav-links {
+  padding-top: 20px;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+main {
+  position: relative;
+  background-color: white;
+  min-height: 100vh;
+  z-index: 1;
+  color: #00b98d;
+  line-height: 1.2;
+  transition: transform .8s;
+}
+
+.open{
+  transform: translate(240px, 0);
+}
+
+h1 {
+  font-size: 48px;
+}
