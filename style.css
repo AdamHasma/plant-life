@@ -115,6 +115,7 @@ section div {
 }
 
 p{
+  line-height: 1.5;
   margin-bottom: 40px;
 }
 
@@ -130,8 +131,12 @@ p{
   position: relative;
 }
 
+.filter{
+  filter: grayscale(1);
+}
+
 .slides img{
-  cursor: pointer;
+  border-radius: 7px;
   position: absolute;
   top: 0;
   left:0;
@@ -140,4 +145,8 @@ p{
 
 .slides img:first-child{
   z-index: 1;
+}
+
+img{
+  filter: grayscale(0);
 }
